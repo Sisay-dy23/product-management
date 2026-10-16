@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Manager - Search</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Product Manager</h2>
+
+        <div>
+
+            <a href="index.html">Dashboard</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="search.html">Search</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <h1>Search Products<span class="flourish">find it fast</span></h1>
+
+        <hr class="page-rule">
+
+
+        <section>
+
+            <h2>Search</h2>
+
+
+            <input
+                type="text"
+                id="searchProduct"
+                placeholder="Product name"
+            >
+
+
+            <button onclick="searchProducts()">
+                Search Products
+            </button>
+
+
+            <button onclick="showAllProducts()">
+                Show All
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2>Search Results</h2>
+
+            <ul id="searchResults"></ul>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

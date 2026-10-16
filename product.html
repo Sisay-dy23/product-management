@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Manager - Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Product Manager</h2>
+
+        <div>
+
+            <a href="index.html">Dashboard</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="search.html">Search</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <h1>Products<span class="flourish">what's on the shelf</span></h1>
+
+        <hr class="page-rule">
+
+
+        <section>
+
+            <h2>Add Product</h2>
+
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Product name"
+            >
+
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Price"
+                min="0"
+            >
+
+
+            <input
+                type="number"
+                id="productQuantity"
+                placeholder="Quantity"
+                min="0"
+            >
+
+
+            <input
+                type="number"
+                id="productReorder"
+                placeholder="Reorder level (default 5)"
+                min="0"
+            >
+
+
+            <button onclick="addProduct()">
+                Add Product
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2>Backup</h2>
+
+            <p>
+                Save a copy of your products to a file, or restore
+                from a previous backup.
+            </p>
+
+            <button onclick="exportProducts()">
+                Export Backup
+            </button>
+
+            <label class="file-button">
+                Import Backup
+                <input
+                    type="file"
+                    id="importFile"
+                    accept="application/json"
+                    onchange="importProducts(event)"
+                >
+            </label>
+
+        </section>
+
+
+        <section>
+
+            <h2>Products</h2>
+
+            <ul id="productList"></ul>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
