@@ -1,6 +1,6 @@
 # Product Management Website
 
-A web development project built with HTML, CSS, and JavaScript.
+A web development project built with HTML, CSS, and JavaScript that important for small businesses
 
 ## Project pages
 
